@@ -1,20 +1,17 @@
 import "./Card.css";
 import Button from "./Button.js";
 
-export default function Card() {
+export default function Card({ question, answer, tag1, tag2, tag3 }) {
   return (
     <li className="card-list__item">
       <article className="card">
-        <h2 className="card__question">
-          In the Kingdom Heart series who provides the english voice for Master
-          Eraqus?
-        </h2>
+        <h2 className="card__question">{question}</h2>
         <Button />
-        <p className="card__answer">Mark Hamill</p>
+        <p className="card__answer card__answer--active">{answer}</p>
         <ul className="card__tag-list">
-          <li className="card__tag-list-item">#kingdomheart</li>
-          <li className="card__tag-list-item">#mastereraqus</li>
-          <li className="card__tag-list-item">#english voices</li>
+          <li className="card__tag-list-item">{tag1}</li>
+          <li className="card__tag-list-item">{tag2}</li>
+          <li className="card__tag-list-item">{tag3}</li>
         </ul>
         <div className="card__button-bookmark">
           <button className="bookmark" aria-label="bookmark" type="button">
