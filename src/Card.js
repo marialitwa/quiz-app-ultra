@@ -6,8 +6,7 @@ export default function Card({ question, answer, tag1, tag2, tag3 }) {
     <li className="card-list__item">
       <article className="card">
         <h2 className="card__question">{question}</h2>
-        <Button />
-        <p className="card__answer card__answer--active">{answer}</p>
+        <Button answer={answer} />
         <ul className="card__tag-list">
           <li className="card__tag-list-item">{tag1}</li>
           <li className="card__tag-list-item">{tag2}</li>
