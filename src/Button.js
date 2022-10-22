@@ -20,7 +20,7 @@ export default function Button({ answer }) {
         Show answer
       </button>
       <p className={state ? "card__answer" : "card__answer--active"}>
-        {answer}
+        {card.answer}
       </p>
     </main>
   );

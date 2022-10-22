@@ -1,16 +1,16 @@
 import "./Card.css";
 import Button from "./Button.js";
 
-export default function Card({ question, answer, tag1, tag2, tag3 }) {
+export default function Card({ card }) {
   return (
     <li className="card-list__item">
       <article className="card">
-        <h2 className="card__question">{question}</h2>
-        <Button answer={answer} />
+        <h2 className="card__question">{card.question}</h2>
+        <Button answer={card.answer} />
         <ul className="card__tag-list">
-          <li className="card__tag-list-item">{tag1}</li>
-          <li className="card__tag-list-item">{tag2}</li>
-          <li className="card__tag-list-item">{tag3}</li>
+          <li className="card__tag-list-item">{card.tags}</li>
+          <li className="card__tag-list-item">{card.tags}</li>
+          <li className="card__tag-list-item">{card.tags}</li>
         </ul>
         <div className="card__button-bookmark">
           <button className="bookmark" aria-label="bookmark" type="button">
