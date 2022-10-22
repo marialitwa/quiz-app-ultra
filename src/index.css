@@ -7,7 +7,7 @@ body {
 
 :root {
   --primary: #ffffff;
-  --secondary: #ff4a11;
+  --secondary: rgb(87, 183, 183);
   --secondary-light: #fddcd2;
   --white: #ffffff;
   --black: #252629;

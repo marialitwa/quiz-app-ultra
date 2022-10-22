@@ -7,38 +7,42 @@ import { useState } from "react";
 const cards = [
   {
     id: 0,
-    question: "Question1",
-    answer:
-      "Laborum incididunt eu quis consectetur ut proident sint proident. Proident exercitation elit reprehenderit proident occaecat Lorem.",
-    tags: ["#HTML", "#CSS"],
+    question: "What are the elements of the exposure triangle?",
+    answer: "Aperture – ISO – Shutter Speed",
+    tag_01: "#photo technique",
+    tag_02: "#exposure",
   },
   {
     id: 1,
-    question: "Question2",
-    answer:
-      "Aliquip Lorem ipsum pariatur reprehenderit nisi nulla eiusmod sint.",
-    tags: ["#HTML", "#CSS", "#JavaScript"],
+    question: "When was the first colour photograph taken?",
+    answer: "1861",
+    tag_01: "#photo history",
+    tag_02: "#color photography",
   },
   {
     id: 2,
-    question: "Question3",
-    answer:
-      "Magna minim laborum enim dolor ea officia adipisicing do exercitation. Qui amet esse nisi qui nisi cupidatat elit occaecat eu et.",
-    tags: ["#HTML", "#JavaScript"],
+    question:
+      "What scale is used when measuring the colour temperature of the light?",
+    answer: "Kelvin",
+    tag_01: "#photo technique",
+    tag_02: "#light",
+    tag_03: "color photography",
   },
   {
     id: 3,
-    question: "Question4",
+    question: "What Is Bokeh?",
     answer:
-      "Ipsum aute mollit id commodo ad cupidatat culpa incididunt. Tempor aliqua id ex sit Lorem est quis in.",
-    tags: ["#HTML", "#CSS", "#JavaScript", "React"],
+      "The aesthetic quality of the blur produced in the out-of-focus parts of an image.",
+    tag_01: "#photo technique",
   },
   {
     id: 4,
-    question: "Question5",
-    answer:
-      "Velit aliquip proident in elit nulla esse id non occaecat proident do sunt. Incididunt eu consequat ipsum qui deserunt.",
-    tags: ["#CSS", "#JavaScript"],
+    question:
+      "What camera brand did NASA use (and leave behind) to photograph the first steps on the moon?",
+    answer: "Hasselblad",
+    tag_01: "#photo history",
+    tag_02: "#camera brands",
+    tag_03: "#nasa",
   },
 ];
 
@@ -48,8 +52,8 @@ function App() {
   return (
     <div>
       <Header />
-
       {state}
+
       <main className="app__main">
         <ul className="card-list">
           {cards.map((card) => (
@@ -60,7 +64,6 @@ function App() {
 
       {/*
         CARDS OHNE ARRAY UND OHNE MAPPING:
-      
         <Card
           question="In the Kingdom Heart series who provides the english voice for Master
           Eraqus?"
