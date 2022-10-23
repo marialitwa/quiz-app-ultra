@@ -4,6 +4,7 @@ import Card from "./Card.js";
 import Navbar from "./Navbar.js";
 import { useState } from "react";
 
+// QUIZ QUESTIONS: https://expertphotography.com/expert-photography-quiz/
 const cards = [
   {
     id: 0,
@@ -21,12 +22,11 @@ const cards = [
   },
   {
     id: 2,
-    question:
-      "What scale is used when measuring the colour temperature of the light?",
-    answer: "Kelvin",
-    tag_01: "#photo technique",
-    tag_02: "#light",
-    tag_03: "color photography",
+    question: "Who photographed the famous picture ‘The Afghan girl’?",
+    answer: "Steve McCurry",
+    tag_01: "#photographers",
+    tag_02: "#famous photographs",
+    tag_03: "#portraiture",
   },
   {
     id: 3,
@@ -43,6 +43,14 @@ const cards = [
     tag_01: "#photo history",
     tag_02: "#camera brands",
     tag_03: "#nasa",
+  },
+
+  {
+    id: 5,
+    question: "What does photography mean, and in what language?",
+    answer: "#Drawing with light in Greek",
+    tag_01: "#photography",
+    tag_02: "#miscellaneous",
   },
 ];
 
