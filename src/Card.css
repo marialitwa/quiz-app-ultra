@@ -3,6 +3,8 @@
   padding: 2rem;
   text-align: center;
   position: relative;
+  background: linear-gradient(30deg, rgb(143, 80, 252), rgb(149, 180, 224));
+  border-radius: 58% 42% 61% 39% / 50% 64% 36% 50%;
 }
 
 .card__question {
